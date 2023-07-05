@@ -18,10 +18,6 @@ header.style.borderBottom = 'solid 3px #000';
 
 
 
-var titles = document.querySelectorAll('.title');
-console.log(titles);
-titles[0].style.fontWeight='bold';
-titles[0].style.color='green'; 
 
 var items = document.getElementsByClassName('list-group-item');
 console.log(items);
@@ -36,4 +32,19 @@ var li = document.getElementsByTagName('li');
 console.log(li);
 li[0].textContent = 'Hello';
 
+
+var secondItem =document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.color='green';
+
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+titles[0].style.fontWeight='bold';
+titles[0].style.color='green'; 
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+
+for(var i=0; i<odd.length; i++)
+{
+    odd[i].style.backgroundColor = 'green';
+}
 
